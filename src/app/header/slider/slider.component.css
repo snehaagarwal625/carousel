@@ -5,12 +5,30 @@ img{
 }
 
 
-.picsum-img-wrapper{
+/* .picsum-img-wrapper{
     padding: 10px;
     border: 1px solid black;
     
-}
+} */
 .slider{
     text-align: center;
+}
+
+.col-3 {
+    padding: 0px !important;
+    border: 1px solid black !important;
+}
+/* 
+.col-3:first-of-type {
+    border-left: 0 !important 
+} */
+
+.align-images {
+    display: flex;
+    justify-content: center;
+}
+
+.col-9  {
+    padding: 30px;
 }
 

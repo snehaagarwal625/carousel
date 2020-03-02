@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 40px !important;
+    width: 40px !important;
+}
+.carousel-control-prev{
+    width: 10% !important;
+    left: -10% !important;
+    background: #80808057 !important;
+}
+
+.carousel-control-next {
+    width: 10% !important;
+    right: -10% !important;
+    background: #80808057 !important;
+}

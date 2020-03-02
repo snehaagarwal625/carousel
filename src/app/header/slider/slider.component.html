@@ -1,6 +1,7 @@
 
     <app-display [img1]="selectedImage" [img2]="images[0]"></app-display>
-    <div class="col-12">
+    <div class="col-12 align-images">
+      <div class="col-9">
         <ngb-carousel *ngIf="images">
             <ng-template ngbSlide>
                 <div class="row">
@@ -85,4 +86,5 @@
                 </div>
             </ng-template>
           </ngb-carousel>
+        </div>
     </div>
