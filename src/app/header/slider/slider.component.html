@@ -1,0 +1,88 @@
+
+    <app-display [img1]="selectedImage" [img2]="images[0]"></app-display>
+    <div class="col-12">
+        <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+                <div class="row">
+                    <div class="col-3" (click)="myClickFunction(images[0])">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[0]" alt="Random first slide">
+                          </div>
+                          <!-- <div class="carousel-caption">
+                            <h3>First slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                          </div> -->
+                    </div>
+                    <div (click)="myClickFunction(images[1])" class="col-3" >
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[1]" alt="Random second slide">
+                          </div>
+                          <!-- <div class="carousel-caption">
+                            <h3>Second slide label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div> -->
+                </div>
+                    <div class="col-3" (click)="myClickFunction(images[2])">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[2]" alt="Random third slide">
+                          </div>
+                          <!-- <div class="carousel-caption">
+                            <h3>Third slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                          </div> -->
+                    </div>
+                    <div class="col-3" (click)="myClickFunction(images[3])">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[3]" alt="Random fourth slide">
+                          </div>
+                          <!-- <div class="carousel-caption">
+                            <h3>Fourth slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                          </div> -->
+                    </div>
+
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="row">
+                    
+                    <div class="col-3"(click)="myClickFunction(images[4])">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[4]" alt="Random fifth slide">
+                          </div>
+                          <!-- <div class="carousel-caption">
+                            <h3>Fifth slide label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div> -->
+                </div>
+                    <div class="col-3" (click)="myClickFunction(images[5])">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[5]" alt="Random sixth slide">
+                          </div>
+                          <!-- <div class="carousel-caption">
+                            <h3>Sixth slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                          </div> -->
+                    </div>
+                    <div class="col-3" (click)="myClickFunction(images[6])">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[6]" alt="Random seventh slide">
+                          </div>
+                          <!-- <div class="carousel-caption">
+                            <h3>seventh slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                          </div> -->
+                    </div>
+                    <div class="col-3" (click)="myClickFunction(images[7])">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[7]" alt="Random eight slide">
+                          </div>
+                          <!-- <div class="carousel-caption">
+                            <h3>Eight slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                          </div> -->
+                    </div>
+                </div>
+            </ng-template>
+          </ngb-carousel>
+    </div>
